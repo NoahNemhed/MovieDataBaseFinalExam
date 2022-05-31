@@ -14,12 +14,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    public void startScrips() throws SQLException, IOException {
-        String[] commandList = {"powershell.exe", "-Command", "dir"};
-        ProcessBuilder pb = new ProcessBuilder(commandList);
-        Process p = pb.start();
-    }
-
     public static void runApp() throws SQLException {
         //Decalring objects
         Connection conn = databaseHelper.DbConnect("movies");
